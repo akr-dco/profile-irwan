@@ -57,7 +57,7 @@ pipeline {
                     sh """
                     ssh -o StrictHostKeyChecking=no ${TARGET_USER}@${TARGET_HOST} '
                         cd ${TARGET_DIR} &&
-                        docker compose pull &&
+                        docker compose build &&
                         docker compose up -d
                     '
                     """
