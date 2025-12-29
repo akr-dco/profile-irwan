@@ -1,8 +1,8 @@
 services:
-  web-profile:
-    image: web-profile:latest
+  web-profile-dev:
+    image: web-profile-dev:latest
     build: .
-    container_name: web-profile
+    container_name: web-profile-dev
     restart: always
     ports:
       - "2001:80"
